@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link href="./index.css" rel="stylesheet" />
+    <link href="../styles/globalstyles.css" rel="stylesheet" />
+    <link href="../styles/contactdetails.css" rel="stylesheet" />
+    <link href="../styles/homestyles.css" rel="stylesheet" />
+    <link href="../styles/experiencedetails.css" rel="stylesheet" />
+    <link href="https://fonts.googleapis.com/css2?family=Syne+Mono&display=swap" rel="stylesheet" />
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/js/all.min.js" integrity="sha512-fD9DI5bZwQxOi7MhYWnnNPlvXdp/2Pj3XSTRrFs5FQa4mizyGLnJcN6tuvUS6LbmgN1ut+XGSABKvjN0H6Aoow==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+    <title>Document</title>
+  </head>
+  <body>
+    <script src="index.js"></script>
+    <main class="container">
+      <header class="top-section">
+        <img src="https://w7.pngwing.com/pngs/340/946/png-transparent-avatar-user-computer-icons-software-developer-avatar-child-face-heroes-thumbnail.png" />
+        <span class="top-section-title-container">
+          <span onclick="handleContactOpen()">Contact</span>
+          <span onclick="handleExperienceOpen()">Experience</span>
+        </span>
+        <span class="top-section-action">
+          <span class="close-action"></span>
+          <span class="minimize-action"></span>
+          <span class="maximize-action"></span>
+        </span>
+      </header>
+      <section class="bottom-section">
+        <article class="contact-details-container">
+          <h1 class="contact-details-title">
+            Contact
+            <span class="window-global-style">
+              <span onclick="handleContactClose()" class="close-action"></span>
+            </span>
+          </h1>
+          <div class="contact-details-contents">
+            <img class="contact-details-image-section" src="./photo.jpg" />
+            <div class="contact-details-details-section">
+              <p class="contact-details-name">Anuroop K</p>
+              <p class="contact-details-mobile">9188423564</p>
+              <a href="mailto:anuroop0003@gmail.com" class="contact-details-link">Email : anuroop0003@gmail.com</a>
+              <br />
+              <a href="https://www.linkedin.com/in/anuroop-k-680b31143" class="contact-details-link">LinkedIn : https://www.linkedin.com/in/anuroop-k-680b31143</a>
+              <p class="contact-details-address">Kozhikode, Kerala</p>
+            </div>
+          </div>
+        </article>
+        <article class="experience-details-container">
+          <h1 class="experience-details-title">
+            Experience
+            <span class="window-global-style">
+              <span onclick="handleProjectClose()" class="close-action"></span>
+            </span>
+          </h1>
+          <div class="experience-details-contents-container">
+            <div class="experience-details-contents-container-inner">
+              <div class="experience-details-contents" id="experience-details-contents1">
+                <span class="experience-details-timeline">
+                  <i class="fa-solid fa-gear fa-spin fa-2xl" style="color: #112467"></i>
+                </span>
+                <div class="experience-details-details-section">
+                  <p class="experience-details-name">CODINGHABITS</p>
+                  <p class="experience-details-position">Software Engineer Intern</p>
+                  <p class="experience-details-date">March 2022 to August 2022</p>
+                  <p class="experience-details-description">Kick start my software developing career in web development. Provides me a hands on idea and knowledge in front end technologies and languages like HTML/CSS, JavaScript, and React</p>
+                </div>
+              </div>
+              <div class="experience-details-contents" id="experience-details-contents2">
+                <span class="experience-details-timeline">
+                  <i class="fa-solid fa-gear fa-spin fa-2xl" style="color: #112467"></i>
+                </span>
+                <div class="experience-details-details-section">
+                  <p class="experience-details-name">Metric Tree Labs</p>
+                  <p class="experience-details-position">Software Engineer</p>
+                  <p class="experience-details-date">October 03 2022 to Current</p>
+                  <p class="experience-details-description">Currently I am working as a React and React Native developer.</p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </article>
+        <article class="home-container">
+          <img class="home-image" src="../photo.jpg" />
+          <h1 class="home-title">Anuroop K</h1>
+        </article>
+      </section>
+    </main>
+  </body>
+</html>

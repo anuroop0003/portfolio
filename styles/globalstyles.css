@@ -1,0 +1,41 @@
+/* Window Global Style */
+.window-global-style {
+  position: absolute;
+  right: 20px;
+  height: 30px;
+  top: 0px;
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+
+.window-global-style .close-action {
+  background-color: #ff605c;
+  height: 15px;
+  width: 15px;
+  border-radius: 50%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.window-global-style .close-action:hover::before {
+  content: "\2715";
+  font-size: 10px;
+  font-weight: bolder;
+  cursor: pointer;
+}
+
+.window-global-style .minimize-action {
+  background-color: #ffbd44;
+  height: 15px;
+  width: 15px;
+  border-radius: 50%;
+}
+
+.window-global-style .maximize-action {
+  background-color: #00ca4e;
+  height: 15px;
+  width: 15px;
+  border-radius: 50%;
+}
